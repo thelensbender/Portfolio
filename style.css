@@ -216,6 +216,6 @@ font-size: clamp(0.7rem, 2vw, 2rem);
     width: 60vw;
   }
   .socialIcon {
-    width: 10vw;
+    width: 8vw;
   }
 }
