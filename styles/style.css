@@ -30,6 +30,14 @@ section {
   cursor: pointer;
 }
 
+#viewButton:hover {
+  background-color: rgb(161, 31, 70);
+}
+
+#viewButton:active {
+  background-color: rgb(110, 13, 42);
+}
+
 #buttonClass {
   margin-top: -0.5vw;
 }
@@ -90,9 +98,6 @@ font-size: clamp(0.7rem, 2vw, 2rem);
 .skills {
   font-size: clamp(0.7rem, 1.4vw, 2rem);
 }
-.skillTitle {
-  font-size: clamp(0.7rem, 1.8vw, 2rem);
-}
 
 .skillType {
   display: flex;
@@ -108,9 +113,6 @@ font-size: clamp(0.7rem, 2vw, 2rem);
   height: 100%;
   display: block;
   object-fit: cover;
-}
-.skillDetails{
-  font-size: clamp(0.7rem, 1.2vw, 2rem);
 }
 .allSkillType{
   margin-top: 1vw;
@@ -129,6 +131,14 @@ font-size: clamp(0.7rem, 2vw, 2rem);
   cursor: pointer;
 }
 
+#git:hover, #live:hover {
+  background-color: rgb(161, 31, 70);
+}
+
+#git:active, #live:active {
+  background-color: rgb(110, 13, 42);
+}
+
 #buttonsDiv {
   display: flex;
   justify-content: space-between;
@@ -143,4 +153,63 @@ font-size: clamp(0.7rem, 2vw, 2rem);
   width: 30vw;
   justify-content: space-between;
   align-items: center;
+}
+
+
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-out;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+@media (max-width: 1023px) {
+  body {
+    padding: 5vw;
+  }
+  #pictureContainer {
+    width: 18vw;
+    height: 18vw;
+    overflow: hidden;
+    border-radius: 10vw;
+  }
+  #topSection {
+    display: flex;
+    align-items: center;
+    column-gap: 10vw;
+  }
+  #aboutSection {
+    max-width: 90vw;
+  }
+  .allSkillType {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+  }
+  .skillType {
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+  }
+  .skillTitle {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+  }
+  .skillDetails{
+    font-size: 0.8rem;
+  }
+  #git, #live {
+    font-size: 0.6rem;
+  }
+  #buttonsDiv{
+    display: flex;
+    justify-content: center;
+    column-gap: 5vw;
+  }
 }
