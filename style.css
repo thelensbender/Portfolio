@@ -212,4 +212,10 @@ font-size: clamp(0.7rem, 2vw, 2rem);
     justify-content: center;
     column-gap: 5vw;
   }
+  .allSocials{
+    width: 60vw;
+  }
+  .socialIcon {
+    width: 10vw;
+  }
 }
